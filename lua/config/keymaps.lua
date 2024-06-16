@@ -1,5 +1,5 @@
 -- C = Ctrl
-vim.keymap.set('n', '<C-b>', '<Cmd>Neotree<CR>') -- Open file tree
+vim.keymap.set('n', '<C-b>', '<Cmd>Neotree toggle<CR>') -- Open file tree
 vim.keymap.set('n', '<C-e>', '<Cmd>BufferLineCycleNext<CR>') -- Next tab
 vim.keymap.set('n', '<C-q>', '<Cmd>BufferLineCyclePrev<CR>') -- Prev tab
 

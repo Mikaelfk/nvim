@@ -40,4 +40,8 @@ opt.spell = false
 -- Motions like "G" also move to the first char
 opt.startofline = true
 
+-- Use system clipboard
 opt.clipboard = "unnamedplus"
+
+-- Line numbering
+opt.number = true
