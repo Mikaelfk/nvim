@@ -33,19 +33,6 @@ return {
       })
 
       ----------------------------------------------------------------
-      -- 🧰 Keymaps for convenience
-      ----------------------------------------------------------------
-      local map = vim.keymap.set
-      local opts = { noremap = true, silent = true }
-
-      map("n", "<leader>cg", "<cmd>CMakeGenerate<CR>", vim.tbl_extend("force", opts, { desc = "CMake: Generate project" }))
-      map("n", "<leader>cb", "<cmd>CMakeBuild<CR>", vim.tbl_extend("force", opts, { desc = "CMake: Build project" }))
-      map("n", "<leader>cr", "<cmd>CMakeRun<CR>", vim.tbl_extend("force", opts, { desc = "CMake: Run target" }))
-      map("n", "<leader>ct", "<cmd>CMakeSelectBuildType<CR>", vim.tbl_extend("force", opts, { desc = "CMake: Select build type" }))
-      map("n", "<leader>cc", "<cmd>CMakeClean<CR>", vim.tbl_extend("force", opts, { desc = "CMake: Clean project" }))
-      map("n", "<leader>cx", "<cmd>CMakeClose<CR>", vim.tbl_extend("force", opts, { desc = "CMake: Close terminal" }))
-
-      ----------------------------------------------------------------
       -- 🧠 Optional: Lualine status integration
       ----------------------------------------------------------------
       local lualine_ok, lualine = pcall(require, "lualine")
